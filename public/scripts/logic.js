@@ -1,5 +1,6 @@
 searchBtn.onclick = () => {
     const text = searchInput.value.trim();
+    console.log(text)
     if (text !== "") {
         fetch('/search', {
             method: 'post',

@@ -142,3 +142,24 @@
   border: none;
   cursor: pointer;
 }
+.home__404 {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#ff7c7c, #ffd082, #88e1f2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.back__404 {
+  text-decoration: none;
+  background-color: #fc8888;
+  color: #21243d;
+  font-size: 2rem;
+  padding: 0.9rem;
+  border-radius: 50px;
+}
+.text__not-found {
+  font-size: 2rem;
+  margin: 2rem;
+}
