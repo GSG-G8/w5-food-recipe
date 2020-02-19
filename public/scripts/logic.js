@@ -17,3 +17,11 @@ searchBtn.onclick = () => {
         searchInput.style.backgroundColor = "#faa";
     }
 }
+
+function fetchRandom() {
+    fetch('/random', {method: 'post'})
+    .then(res => res.json())
+    .then(res => renderSearch(res.hits));
+}
+
+fetchRandom();

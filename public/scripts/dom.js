@@ -21,6 +21,7 @@ precipeDetails.style.display = "none"
 
 function createRecipeElement(obj) {
   const recipe = obj.recipe;
+  if (!recipe) return;
   
   const article = document.createElement("article");
   const img = document.createElement("img");
