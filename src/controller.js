@@ -1,11 +1,16 @@
 const fetch = require('node-fetch');
 require('dotenv').config();
 
+<<<<<<< HEAD
 const apiRequest = (query, response) => {
+=======
+const recipeSearch = (request, response) => {
+    console.log(request.body);
+    const query = request.body.query;
+>>>>>>> 144964751e14786c953f8aa787455900f3d546fd
     const recipeAppID = process.env.recipeAppID;
     const recipeAppKey = process.env.recipeAppKey;
     const url = `https://api.edamam.com/search?q=${query}&app_id=${recipeAppID}&app_key=${recipeAppKey}`;
-    
     fetch(url)
         .then(res => res.json())
         .then(res => {

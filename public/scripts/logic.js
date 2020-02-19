@@ -1,5 +1,6 @@
 searchBtn.onclick = () => {
     const text = searchInput.value.trim();
+    console.log(text)
     if (text !== "") {
         fetch('/search', {
             method: 'post',
@@ -17,6 +18,7 @@ searchBtn.onclick = () => {
         searchInput.style.backgroundColor = "#faa";
     }
 }
+<<<<<<< HEAD
 
 function fetchRandom() {
     fetch('/random', {method: 'post'})
@@ -25,3 +27,5 @@ function fetchRandom() {
 }
 
 fetchRandom();
+=======
+>>>>>>> 144964751e14786c953f8aa787455900f3d546fd
