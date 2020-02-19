@@ -6,8 +6,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.static('public'))
-app.use(err.client);
-app.use(err.server);
 app.use(routes);
+app.use(err.client);
 
 module.exports = app;
