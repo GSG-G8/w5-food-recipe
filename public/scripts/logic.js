@@ -1,13 +1,19 @@
 searchBtn.onclick = () => {
-    fetch('/search', {
-        method: 'post',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            query: searchInput.value,
-        })
-      })
-      .then(res => res.json())
-      .then(console.log);
+    const text = searchInput.value.trim();
+    if (text !== "") {
+        fetch('/search', {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                query: text,
+            })
+          })
+          .then(res => res.json())
+          .then(res => renderSearch(res.hits));
+    } else {
+        searchInput.style.borderColor = "#f00";
+        searchInput.style.backgroundColor = "#faa";
+    }
 }
