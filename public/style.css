@@ -93,3 +93,53 @@
     font-weight: bold;
     background-color: #88e7fa;
   }
+  .food-precipe {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(#ffd800,#6fb98f);
+    padding-bottom: 20px;
+  }
+  .food-precipe__top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .food-precipe__top-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .food__name {
+    font-size: 5rem;
+    font-family: fantasy;
+    font-weight: bold;
+  }
+  .food-precipe__image {
+    width: 40%;
+    height: 80%;
+  }
+  .ingerdients__name {
+    font-size: 3rem;
+    font-family: fantasy;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+  .ingerdients__ingerden{
+    font-size: 1rem;
+  }
+  .food-precie__close{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    font-size: 30px;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+  }
