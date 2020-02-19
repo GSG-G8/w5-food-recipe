@@ -6,19 +6,38 @@ const food = document.querySelector('.food');
 const searchInput = document.querySelector('.search__input');
 const searchBtn = document.querySelector('.search__btn');
 
-document.addEventListener('click', e => {
-  if (e.target.name == 'foodPre') {
-    foodPrecipeImage.src = e.target.src;
-    precipeDetails.style.display = 'flex';
-    food.style.display = 'none';
-  }
-});
-foodPrecieClose.addEventListener('click', ()=>{
-food.style.display = 'flex';
-precipeDetails.style.display = 'none'
-})
+let searchResults = [];
 
-function createRecipeElement(obj) {
+function showDetails() {
+  food.style.display = "none";
+  precipeDetails.style.display = "flex";
+}
+
+function hideDetails() {
+  food.style.display = "flex";
+  precipeDetails.style.display = "none"
+}
+
+foodPrecieClose.onclick = hideDetails;
+
+
+function selectThis() {
+  showDetails()
+  const thisRecipe = searchResults[this.arrayIndex].recipe;
+  foodPrecipeImage.src = thisRecipe.image;
+
+  document.querySelector(".food__name").textContent = thisRecipe.label;
+  const ingerdients = document.querySelector(".ingerdients__ingerden");
+  ingerdients.textContent = "";
+  thisRecipe.ingredientLines.forEach(line => {
+    const el = document.createElement("li");
+    el.textContent = line;
+    ingerdients.appendChild(el);
+  });
+
+}
+
+function createRecipeElement(obj, index) {
   const recipe = obj.recipe;
   
   const article = document.createElement("article");
@@ -31,6 +50,8 @@ function createRecipeElement(obj) {
   img.alt = "food__precipe";
   img.name = "foodPre";
   img.className = "precipe__image";
+  img.arrayIndex = index;
+  img.onclick = selectThis;
   span.textContent = recipe.label;
   span.className = "precipe__name";
   nutrients.className = "precipe__detials";
@@ -53,12 +74,14 @@ function createRecipeElement(obj) {
   return article;
 }
 
+
 function renderSearch(arr) {
   if (!Array.isArray(arr) || arr.length===0) return;
   
+  searchResults = arr;
   food.textContent = '';
-  arr.forEach(recipe => {
-    food.appendChild(createRecipeElement(recipe));
+  arr.forEach((recipe, index) => {
+    food.appendChild(createRecipeElement(recipe, index));
   });
 }
 
