@@ -7,5 +7,5 @@ exports.client = (req, res) =>{
 
 exports.server = (err, req, res, next) =>{
     res.status(500)
-    res.sendFile(path.join(__dirname,'..','public','500.html'))
+    res.send('error server')
 } 
