@@ -1,145 +1,144 @@
 * {
-    margin: 0;
-  }
-  .body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    background-image: linear-gradient(#21243d, #ff7c7c, #ffd082, #88e1f2);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .header {
-    display: flex;
-    flex-direction: row;
-    background-color: #1f213a;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .header__search {
-    display: flex;
-    margin-left: 10%;
-    border-radius: 50px;
-    width: 50%;
-  }
-  .search__input {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    padding: 10px;
-    outline: none;
-    width: 90%;
-  }
-  .search__btn {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    outline: none;
-    border: none;
-    background-color: #151735;
-    width: 15%;
-    cursor: pointer;
-  }
-  .search__btn:hover {
-    background-color: rgb(4, 211, 238);
-  }
-  .logo {
-    margin-right: 2%;
-    width: 50px;
-    height: 50px;
-  }
-  .food {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .food__precipe {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 20px;
-    padding-bottom: 5%;
-    width: 350px;
-    height: 450px;
-  }
-  .precipe__image {
-    width: 100%;
-    height: 70%;
-    margin-bottom: 2%;
-    cursor: pointer;
-  
-  }
-  
-  .precipe__name {
-    font-size: 2.5rem;
-    margin-left: 2%;
-  }
-  
-  .precipe__detials {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 10%;
-    margin-right: 2%;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    background-color: #88e7fa;
-  }
-  .food-precipe {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    background-image: linear-gradient(#ffd800,#6fb98f);
-    padding-bottom: 20px;
-  }
-  .food-precipe__top {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 10px;
-  }
-  .food-precipe__top-text {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-  }
-  .food__name {
-    font-size: 5rem;
-    font-family: fantasy;
-    font-weight: bold;
-  }
-  .food-precipe__image {
-    width: 40%;
-    height: 80%;
-  }
-  .ingerdients__name {
-    font-size: 3rem;
-    font-family: fantasy;
-    font-weight: bold;
-    margin-left: 10%;
-  }
-  .ingerdients__ingerden{
-    font-size: 1rem;
-  }
-  .food-precie__close{
-    position: absolute;
-    top: 10%;
-    left: 2%;
-    background-color: red;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    outline: none;
-    font-size: 30px;
-    padding: 2px;
-    border: none;
-    cursor: pointer;
+  margin: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  background-image: linear-gradient(#21243d, #ff7c7c, #ffd082, #88e1f2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f213a;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__search {
+  display: flex;
+  margin-left: 10%;
+  border-radius: 50px;
+  width: 50%;
+}
+.search__input {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 10px;
+  outline: none;
+  width: 90%;
+}
+.search__btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #151735;
+  width: 15%;
+  cursor: pointer;
+}
+.search__btn:hover {
+  background-color: rgb(4, 211, 238);
+}
+.logo {
+  margin-right: 2%;
+  width: 50px;
+  height: 50px;
+}
+.food {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.food__precipe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  padding-bottom: 5%;
+  width: 350px;
+  height: 450px;
+}
+.precipe__image {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
 
+.precipe__name {
+  font-size: 2.5rem;
+  margin-left: 2%;
+}
+
+.precipe__detials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #88e7fa;
+}
+.food-precipe {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(#ffd800, #6fb98f);
+  padding-bottom: 20px;
+}
+.food-precipe__top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.food-precipe__top-text {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.food__name {
+  font-size: 5rem;
+  font-family: fantasy;
+  font-weight: bold;
+}
+.food-precipe__image {
+  width: 40%;
+  height: 80%;
+}
+.ingerdients__name {
+  font-size: 3rem;
+  font-family: fantasy;
+  font-weight: bold;
+  margin-left: 10%;
+}
+.ingerdients__ingerden {
+  font-size: 1rem;
+}
+.food-precie__close {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  background-color: red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  font-size: 30px;
+  padding: 2px;
+  border: none;
+  cursor: pointer;
+}
