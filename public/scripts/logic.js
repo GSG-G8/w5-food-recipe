@@ -1,5 +1,5 @@
 searchBtn.onclick = () => {
-    fetch('http://localhost:4000/search', {
+    fetch('/search', {
         method: 'post',
         headers: {
             'Content-Type': 'application/json'
