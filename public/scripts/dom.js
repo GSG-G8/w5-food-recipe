@@ -89,7 +89,3 @@ searchInput.oninput = () => {
   searchInput.style.borderColor = "#aaa";
   searchInput.style.backgroundColor = "#fff";
 }
-
-function renderRecipe(obj) {
-  foodPrecipeImage
-}
