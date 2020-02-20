@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const recipeSearch = (request, response) => {
-    console.log(request.body);
+    
     const query = request.body.query;
     const recipeAppID = process.env.recipeAppID;
     const recipeAppKey = process.env.recipeAppKey;
