@@ -5,16 +5,19 @@ const food = document.querySelector('.food');
 
 const searchInput = document.querySelector('.search__input');
 const searchBtn = document.querySelector('.search__btn');
+const footer = document.querySelector('.footer');
 
 let searchResults = [];
 
 function showDetails() {
   food.style.display = "none";
+  footer.style.display = "none";
   precipeDetails.style.display = "flex";
 }
 
 function hideDetails() {
   food.style.display = "flex";
+  footer.style.display = "flex";
   precipeDetails.style.display = "none"
 }
 
@@ -58,6 +61,7 @@ function createRecipeElement(obj, index) {
 
   ["FAT", "WATER", "PROCNT", "SUGAR", "ENERC_KCAL", "CHOCDF"]
     .map(e => recipe.totalNutrients[e])
+    .filter(Boolean)
     .forEach(item => {
       const el = document.createElement("div");
       const sp = document.createElement("span");
